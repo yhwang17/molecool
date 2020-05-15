@@ -4,6 +4,13 @@ A Python package for analyzing and visualizing xyz files. For MolSSI Workshop Py
 
 Handles the primary functions
 """
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
+from mpl_toolkits.mplot3d import Axes3D
+
+%matplotlib notebook
 
 
 def canvas(with_attribution=True):
