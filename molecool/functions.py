@@ -44,10 +44,10 @@ def zen(with_attribution=True):
     Sparse is better than dense.
     Readability counts.
     Special cases aren't special enough to break the rules.
-        Although practicality beats purity.
-        Errors should never pass silently.
-        Unless explicitly silenced.
-        In the face of ambiguity, refuse the temptation to guess.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
     There should be one-- and preferably only one --obvious way to do it.
     Although that way may not be obvious at first unless you're Dutch.
     Now is better than never.
@@ -82,16 +82,6 @@ def open_pdb(f_loc):
     coords = np.array(c)
     return sym, coords
 
-atomic_weights = {
-    'H': 1.00784,
-    'C': 12.0107,
-    'N': 14.0067,
-    'O': 15.999,
-    'P': 30.973762,
-    'F': 18.998403,
-    'Cl': 35.453,
-    'Br': 79.904,
-}
 
 
 def open_xyz(file_location):
@@ -199,19 +189,6 @@ def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
                 bonds[(atom1, atom2)] = distance
 
     return bonds
-
-atom_colors = {
-    'H': 'white',
-    'C': '#D3D3D3',
-    'N': '#add8e6',
-    'O': 'red',
-    'P': '#FFA500',
-    'F': '#FFFFE0',
-    'Cl': '#98FB98',
-    'Br': '#F4A460',
-    'S': 'yellow'
-}
-
 
 
 if __name__ == "__main__":
