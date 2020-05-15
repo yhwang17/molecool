@@ -26,3 +26,11 @@ Project based on the
 This package requires the following:
   - numpy
   - matplotlib
+
+Features should be developed on branches. To create and switch to a branch, use the command
+
+`git checkout -b new_branch_name`
+
+To switch to an existing branch, use
+
+`git checkout new_branch_name`
